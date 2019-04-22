@@ -1,0 +1,15 @@
+﻿@page "/search"
+@inherits BlazorDemo.Code.SearchComponent
+
+
+<input type="text" bind="@SearchValue" onkeydown="@OnKeyPressed" />
+
+<button class="btn btn-primary" onclick="@Search">Search</button>
+
+<br />
+Google Search Result Count:@SearchResult
+<br />
+<br />
+<br />
+Pressed Key:@PressedKey
+<br />
